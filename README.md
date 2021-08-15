@@ -42,8 +42,7 @@ http://localhost:8000/posts
 
 ## Todo
 
-- [ ] Flash message
+- [x] Flash message
 - [ ] CRUD Testing
-- [ ] Make create and edit components
 - [ ] Image upload
 - [ ] Image upload testng
