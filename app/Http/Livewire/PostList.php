@@ -73,6 +73,8 @@ class PostList extends Component
                 'content' => $this->content,
             ]);
 
+            $this->search = null;
+
             session()->flash('success', 'Post successfully created.');
         }
 
