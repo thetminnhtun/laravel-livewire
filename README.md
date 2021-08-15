@@ -6,7 +6,7 @@ This is a project that is SPA(single page application) with TDD(Test Driven Deve
 
 Clone this reposistroy
 ```
-git clone
+git clone git@github.com:thetminnhtun/laravel-livewire.git
 ```
 
 Install the dependencies
