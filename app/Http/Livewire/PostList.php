@@ -65,11 +65,15 @@ class PostList extends Component
                 'title' => $this->title,
                 'content' => $this->content,
             ]);
+
+            session()->flash('success', 'Post successfully updated.');
         } else {
             Post::create([
                 'title' => $this->title,
                 'content' => $this->content,
             ]);
+
+            session()->flash('success', 'Post successfully created.');
         }
 
         $this->emit('closePostModal');

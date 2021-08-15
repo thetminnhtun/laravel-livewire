@@ -11,12 +11,12 @@
                     <div class="modal-body">
                         <div class="mb-3">
                             <label class="form-label">Title</label>
-                            <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror">
+                            <input wire:model.lazy="title" type="text" class="form-control @error('title') is-invalid @enderror">
                             @error('title') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Content</label>
-                            <textarea wire:model="content" class="form-control" cols="30" rows="10"></textarea>
+                            <textarea wire:model.lazy="content" class="form-control" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">

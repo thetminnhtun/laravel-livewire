@@ -8,6 +8,14 @@
                 <button class="btn btn-primary float-end" wire:click="create">Create</button>
             </div>
             <div class="col-12 mt-3">
+
+                @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <table class="table table-striped">
                     <thead>
                         <tr>
